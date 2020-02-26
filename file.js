@@ -6,3 +6,13 @@ var newsFeed = [
 
 var userNamePrompt = prompt("What's your username?");
 var passwordPrompt = prompt("What's your password?");
+
+function signIn(user, pass) {
+  if (user === databse[0].username && pass === databse[0].password) {
+    console.log(newsFeed);
+  } else {
+    alert("Sorry, wrong username and password!");
+  }
+}
+
+signIn(userNamePrompt, passwordPrompt);
